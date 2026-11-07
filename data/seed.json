@@ -1,0 +1,89 @@
+{
+  "banks": [
+    {
+      "bu": "APT",
+      "bank": "Meezan",
+      "month": "2026-10",
+      "closing_date": "31-Oct-2026",
+      "erp": 230000.0,
+      "bank_close": 225000.0,
+      "adjusted_erp": 225000.0,
+      "adjusted_bank": 225000.0,
+      "source": "SYNTHETIC DEMO",
+      "status": "DEMO"
+    },
+    {
+      "bu": "IPS",
+      "bank": "UBL",
+      "month": "2026-10",
+      "closing_date": "31-Oct-2026",
+      "erp": 105000.0,
+      "bank_close": 100000.0,
+      "adjusted_erp": 100000.0,
+      "adjusted_bank": 100000.0,
+      "source": "SYNTHETIC DEMO",
+      "status": "DEMO"
+    }
+  ],
+  "entries": [
+    {
+      "id": "DEMO-001",
+      "bu": "APT",
+      "bank": "Meezan",
+      "month": "2026-10",
+      "source_sheet": "DEMO",
+      "source_row": 1,
+      "employee": "Demo Employee A",
+      "category": "AMOUNT DEBITED BY BANK NOT RECORDED BY US",
+      "date": "14-Oct-2026",
+      "particulars": "Sample bank charge",
+      "reference": "DEMO-CHG-01",
+      "erp_amount": -250.0,
+      "bank_amount": null,
+      "flags": ""
+    },
+    {
+      "id": "DEMO-002",
+      "bu": "APT",
+      "bank": "Meezan",
+      "month": "2026-10",
+      "source_sheet": "DEMO",
+      "source_row": 2,
+      "employee": "Demo Employee B",
+      "category": "CHEQUE ISSUED BUT NOT YET DEBITED BY BANK",
+      "date": "03-Sep-2026",
+      "particulars": "Synthetic outstanding cheque",
+      "reference": "DEMO-CHQ-42",
+      "erp_amount": null,
+      "bank_amount": -4750.0,
+      "flags": ""
+    },
+    {
+      "id": "DEMO-003",
+      "bu": "IPS",
+      "bank": "UBL",
+      "month": "2026-10",
+      "source_sheet": "DEMO",
+      "source_row": 3,
+      "employee": "Demo Employee A",
+      "category": "AMOUNT CREDITED BY BANK NOT RECORDED BY US",
+      "date": "",
+      "particulars": "Synthetic deposit",
+      "reference": "",
+      "erp_amount": 5000.0,
+      "bank_amount": null,
+      "flags": "Date missing; Reference missing"
+    }
+  ],
+  "historical": [
+    {
+      "bu": "IPS",
+      "bank": "UBL",
+      "month": "2026-10",
+      "description": "DEMO historical closing bridge (not actual bank data)",
+      "amount": 1200.0,
+      "source_row": 4
+    }
+  ],
+  "source": "SYNTHETIC DATA ONLY"
+}

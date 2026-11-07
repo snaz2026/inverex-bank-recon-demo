@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: inverex-bank-recon-synthetic-demo
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    healthCheckPath: /health
+    envVars:
+      - key: RECON_CLOUD_DEMO
+        value: "1"
+      - key: RECON_ADMIN_PASSWORD
+        sync: false
